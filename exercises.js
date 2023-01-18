@@ -4,8 +4,17 @@ function octalToDecimal(str) {
   }, 0)
 }
 
-function anagram() {
-  //Write code here
+function anagram(str) {
+  const result = []
+  const cloneStr = str.split("").sort().join("")
+  for (let eles of arr) {
+    if (cloneStr.length === eles.length) {
+      const sort = eles.split("").sort().join("")
+      console.log(sort)
+      if (cloneStr === sort) result.push(eles)
+    }
+  }
+  return result
 }
 
 function triangle() {

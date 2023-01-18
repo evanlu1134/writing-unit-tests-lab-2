@@ -9,3 +9,10 @@ test('Question 1: octalToDecimal', () => {
   expect(exercises.octalToDecimal('11')).toEqual(9);
 });
 
+test('Question 2: anagram', () => {
+  expect(exercises.anagram('listen', ['enlists', 'google', 'inlets', 'banana'])).toEqual([ "inlets" ]);
+  expect(exercises.anagram('listen', ['enlist', 'google', 'inlets', 'banana'])).toEqual([ "enlist", "inlets" ]);
+});
+
+
+  
