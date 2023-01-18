@@ -14,5 +14,12 @@ test('Question 2: anagram', () => {
   expect(exercises.anagram('listen', ['enlist', 'google', 'inlets', 'banana'])).toEqual([ "enlist", "inlets" ]);
 });
 
+test('Question 3: triangle', () => {
+  expect(exercises.triangle(60, 70, 50)).toBe("acute");
+  expect(exercises.triangle(30, 90, 60)).toBe("right");
+  expect(exercises.triangle(120, 50, 10)).toBe("obtuse");
+  expect(exercises.triangle(0, 90, 90)).toBe("invalid");
+  expect(exercises.triangle(50, 50, 50)).toBe("invalid");
+});
 
   

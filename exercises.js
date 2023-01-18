@@ -4,7 +4,7 @@ function octalToDecimal(str) {
   }, 0)
 }
 
-function anagram(str) {
+function anagram(str,arr) {
   const result = []
   const cloneStr = str.split("").sort().join("")
   for (let eles of arr) {
@@ -17,8 +17,9 @@ function anagram(str) {
   return result
 }
 
-function triangle() {
-  //Write code here
+function triangle(s1,s2,s3) {
+  const triangleType = [s1,s2,s3]
+  return triangleType.reduce((a,b) => a + b,0) !== 180 || triangleType.some(n => n === 0) ? "invalid" : triangleType.every(n => n < 90) ? "acute" : triangleType.some(n => n > 90) ? "obtuse" : "right"
 }
 
 function fridayThe13ths() {
