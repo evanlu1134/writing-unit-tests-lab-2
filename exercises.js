@@ -22,8 +22,13 @@ function triangle(s1,s2,s3) {
   return triangleType.reduce((a,b) => a + b,0) !== 180 || triangleType.some(n => n === 0) ? "invalid" : triangleType.every(n => n < 90) ? "acute" : triangleType.some(n => n > 90) ? "obtuse" : "right"
 }
 
-function fridayThe13ths() {
-  //Write code here
+function fridayThe13ths(date) {
+  let count = 0
+  for(let m = 0; m < 12;m++){
+    let jason = new Date(date, m, 13)
+    if(jason.getDay() === 5) count++
+  }
+  return count
 }
 
 module.exports = {

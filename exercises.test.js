@@ -22,4 +22,10 @@ test('Question 3: triangle', () => {
   expect(exercises.triangle(50, 50, 50)).toBe("invalid");
 });
 
+test('Question 4: fridayThe13ths', () => {
+  expect(exercises.fridayThe13ths(1986)).toBe(1);
+  expect(exercises.fridayThe13ths(2015)).toBe(3);
+  expect(exercises.fridayThe13ths(2017)).toBe(2);
+});
+
   
